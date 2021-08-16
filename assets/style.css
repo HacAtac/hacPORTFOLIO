@@ -1,0 +1,23 @@
+:root {
+    --primary: rgb(56, 16, 56);
+    --secondary: rgb(17, 49, 17);
+    --third: rgb(58, 55, 55);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    color: var (--primary);
+    background-color: var(--third);
+}
+
+header {
+    background-color: var(--primary);
+    display: flex;
+    justify-content:space-between;
+}
