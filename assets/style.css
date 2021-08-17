@@ -66,3 +66,31 @@ header nav ul li a:hover {
     color: var(--primary);
     border-radius: 15px;
 }
+
+.hero {
+    background-image: url("../assets/images/hero.png");
+    height: 300px;
+    background-size: cover;
+    backgroun-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero img {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+.hero .text {
+    font-size: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    text-align: right;
+    color:var(--third);
+    margin-top: 150px;
+    background-color:var(--primary);
+    border: 3px solid var(--secondary);
+}
