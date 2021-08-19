@@ -71,7 +71,7 @@ header nav ul li a:hover {
     background-image: url("../assets/images/hero.png");
     height: 300px;
     background-size: cover;
-    backgroun-position: center;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -96,6 +96,9 @@ header nav ul li a:hover {
 }
 
 .left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     border-right: 5px solid var(--secondary);
     min-height: 100%;
     text-align: right;
@@ -105,7 +108,9 @@ header nav ul li a:hover {
 }
 
 .left h2 {
-    font-size: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 36px;
     color:var(--primary);
 }
 
@@ -144,11 +149,6 @@ header nav ul li a:hover {
     justify-content: space-around;
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
-}
-
-.work:hover{
-    opacity: 1.0;
 }
 
 .run-buddy {
@@ -159,8 +159,7 @@ header nav ul li a:hover {
     border: 5px solid var(--primary);
     margin-bottom: 10px;
     padding-top: 150px;
-   
-    
+    opacity: 0.4;
 }
 
 .calender {
@@ -168,12 +167,10 @@ header nav ul li a:hover {
     width: 49%;
     background-size: cover;
     background-position: center;
-    border: 5px solid var(--secondary);
+    border: 5px solid var(--primary);
     margin-bottom: 10px;
     padding-top: 65px;
-    
-    
-
+    opacity: 0.4;
 }
 
 .hacREFACTOR {
@@ -184,7 +181,7 @@ header nav ul li a:hover {
     border: 5px solid var(--primary);
     margin-bottom: 10px;
     padding-top: 65px;
-    
+    opacity: 0.4;
 }
 
 .robot-gladiators {
@@ -192,9 +189,9 @@ header nav ul li a:hover {
     width: 49%;
     background-size:cover;
     background-position: center;
-    border: 5px solid var(--secondary);
+    border: 5px solid var(--primary);
     padding-top: 65px;
-    
+    opacity: 0.4;
 }
 
 .placeholder {
@@ -204,14 +201,13 @@ header nav ul li a:hover {
     background-position: center;
     border: 5px solid var(--primary);
     padding-top: 65px;
-    
+    opacity: 0.4;
 }
 
 .note {
-    color: var(--primary);
-    background-color: lightgray;
+    color: var(--secondary);
     width:48%;
-    
+    background-color: var(--primary);
 }
 
 .note h3 {
@@ -225,3 +221,52 @@ header nav ul li a:hover {
     text-decoration: none;
 }
 
+.run-buddy:hover, .calender:hover, .hacREFACTOR:hover, .robot-gladiators:hover, .placeholder:hover {
+    opacity: 1.0;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+
+
+.footer-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-list {
+    width: 60%;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    border-bottom: 2px solid var(--secondary);
+    color: var(--primary);
+    padding: 5px;
+}
+
+footer ul li a:hover {
+    background: var(--third);
+    color: var(--secondary);
+    border-radius: 10px;
+}
+
+
+/*MEDIA QUERY FOR SMALLER SCREENS */
+@media screen and (max-width: 414px)
+    
