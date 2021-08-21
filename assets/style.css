@@ -1,21 +1,28 @@
+/*psuedo color */
 :root {
     --primary: rgb(56, 16, 56);
     --secondary: rgb(17, 49, 17);
     --third: rgb(58, 55, 55);
 }
+/*psuedo color */
 
+/* Universal Selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*universal selector end */
 
+/*body start */
 body {
     font-family:Arial, Helvetica, sans-serif;
     color: var (--primary);
     background-color: lightgray;
 }
+/*body end*/
 
+/* header start */
 header {
     background-color: var(--primary);
     display: flex;
@@ -66,7 +73,9 @@ header nav ul li a:hover {
     color: var(--primary);
     border-radius: 15px;
 }
+/*header end*/
 
+/*hero start*/
 .hero {
     background-image: url("../assets/images/hero.png");
     height: 200px;
@@ -93,6 +102,7 @@ header nav ul li a:hover {
     background-color:var(--primary);
     border: 3px solid var(--secondary);
 }
+/* hero end */
 
 .left {
     border-right: 5px solid var(--secondary);
@@ -108,7 +118,7 @@ header nav ul li a:hover {
     font-size: 36px;
     color:var(--primary);
 }
-
+/*about me start */
 .about-me {
     display: flex;
     justify-content: space-between;
@@ -122,7 +132,9 @@ header nav ul li a:hover {
     line-height: 1.5;
     width: 90%;
 }
+/*about me end*/
 
+/*my work section start */
 .my-work {
     padding: 30px 0;
     display: flex;
@@ -200,6 +212,9 @@ header nav ul li a:hover {
     opacity: 1.0;
 }
 
+/* my work section end */
+
+/*footer section start*/
 footer {
     display: flex;
     justify-content: space-between;
@@ -244,11 +259,21 @@ footer ul li a:hover {
     color: var(--secondary);
     border-radius: 10px;
 }
-
+/*footer section end */
 
 /*MEDIA QUERY FOR SMALLER SCREENS */
 @media screen and (max-width: 750px) {
+    /* title beside different sections with border */
+    .left {
+        border-right: none;
+        border-bottom:5px solid var(--secondary);
+        max-width: 80%;
+        width: 100%;
+        text-align: left;
+    }
+    /* title beside different sections with border end*/
     
+    /*header section start*/
     header {
         justify-content: center;
         width: 100%;
@@ -270,15 +295,24 @@ footer ul li a:hover {
     header nav ul li a {
         font-size: 16px;
     }
+    /*header section end*/
+    
+    /*hero section start*/
+    .hero .text {
+        font-size: 24px;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    /*hero section end*/
 
-
-
-
+    /*about-me my-work selectors*/
     .about-me, .my-work{
         justify-content: center;
         flex-wrap:wrap;
         padding: 0px;
     }
+    
 
     .about-me p {
         font-size: 16px;
@@ -286,24 +320,10 @@ footer ul li a:hover {
         width: 100%;
         padding: 15px;
     }
+    /*about-me my-work selectors end*/
 
-    .hero .text {
-        font-size: 24px;
-        justify-content: center;
-        text-align: center;
-        
-    }
-
-    .left {
-        border-right: none;
-        border-bottom:5px solid var(--secondary);
-        max-width: 80%;
-        width: 100%;
-        text-align: left;
-    }
-
+    /*my work section start */
     
-
     .opacity {
         width: 100%;
     }
@@ -316,9 +336,9 @@ footer ul li a:hover {
     .note {
         width: 90%;
     }
-
+    /* my work section end */
     
-    
+    /* footer section start */
     footer {
         flex-direction: column;
         
@@ -351,6 +371,8 @@ footer ul li a:hover {
     .footer-wrapper {
         justify-content: space-between;
     }
+
+    /* footer section end */
 
     
 
