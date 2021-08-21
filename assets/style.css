@@ -77,7 +77,7 @@ header nav ul li a:hover {
 
 /*hero start*/
 .hero {
-    background-image: url("../assets/images/hero.png");
+    background-image: url("../images/hero.png");
     height: 200px;
     background-size: cover;
     background-position: center;
@@ -169,25 +169,25 @@ header nav ul li a:hover {
 }
 
 #run-buddy {
-    background-image: url("../assets/images/hero-bg.jpg");
+    background-image: url("../images/hero-bg.jpg");
     width: 99%;
 }
 
 #calender {
-    background-image: url("../assets/images/calender.png");
+    background-image: url("../images/calender.png");
 }
 
 #hacREFACTOR {
-    background-image: url("../assets/images/hacREFACTOR.png");  
+    background-image: url("../images/hacREFACTOR.png");  
 }
 
 #robot-gladiators {
-    background-image: url("../assets/images/robots.jpg");
+    background-image: url("../images/robots.jpg");
     
 }
 
 #placeholder {
-    background-image: url("../assets/images/placeholder.png");
+    background-image: url("../images/placeholder.png");
     
 }
 
