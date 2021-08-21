@@ -101,6 +101,7 @@ header nav ul li a:hover {
     color:var(--third);
     background-color:var(--primary);
     border: 3px solid var(--secondary);
+    
 }
 /* hero end */
 
@@ -302,7 +303,7 @@ footer ul li a:hover {
         font-size: 24px;
         justify-content: center;
         text-align: center;
-        
+        margin-left: 30px;
     }
     /*hero section end*/
 
