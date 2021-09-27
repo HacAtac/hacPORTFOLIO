@@ -17,7 +17,7 @@
 /*body start */
 body {
     font-family:Arial, Helvetica, sans-serif;
-    color: var (--primary);
+    color: var(--primary);
     background-color: lightgray;
 }
 /*body end*/
@@ -188,7 +188,7 @@ header nav ul li a:hover {
 }
 
 #placeholder {
-    background-image: url("../images/placeholder.png");
+    background-image: url("../images/gameApp.png");
     
 }
 
